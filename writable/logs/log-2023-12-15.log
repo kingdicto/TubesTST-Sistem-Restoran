@@ -1,0 +1,221 @@
+ERROR - 2023-12-15 09:44:59 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username...')
+#4 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#5 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+#6 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username...')
+#3 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#4 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+#5 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo...')
+#9 {main}
+CRITICAL - 2023-12-15 09:44:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+ERROR - 2023-12-15 09:45:07 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), '', 3306, '', 0)
+#1 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username...')
+#4 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#5 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+#6 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username...')
+#3 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#4 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+#5 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#6 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo...')
+#9 {main}
+CRITICAL - 2023-12-15 09:45:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+ERROR - 2023-12-15 09:50:27 --> mysqli_sql_exception: Table 'dbrestoran.users' doesn't exist in C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT username...', 0)
+#1 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username...')
+#2 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username...')
+#3 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username...')
+#4 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#5 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+#6 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo...')
+#10 {main}
+CRITICAL - 2023-12-15 09:50:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+CRITICAL - 2023-12-15 09:50:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+CRITICAL - 2023-12-15 09:50:27 --> [Caused by] mysqli_sql_exception: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 5 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+ERROR - 2023-12-15 09:50:47 --> mysqli_sql_exception: Table 'dbrestoran.users' doesn't exist in C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT username...', 0)
+#1 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username...')
+#2 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username...')
+#3 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username...')
+#4 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#5 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+#6 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo...')
+#10 {main}
+CRITICAL - 2023-12-15 09:50:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+CRITICAL - 2023-12-15 09:50:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+CRITICAL - 2023-12-15 09:50:47 --> [Caused by] mysqli_sql_exception: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 5 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+ERROR - 2023-12-15 10:20:35 --> mysqli_sql_exception: Table 'dbrestoran.users' doesn't exist in C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT username...', 0)
+#1 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username...')
+#2 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username...')
+#3 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username...')
+#4 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\app\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#5 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+#6 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#7 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Lenovo\OneDrive\Documents\TST\TubesTST-Sistem-Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo...')
+#10 {main}
+CRITICAL - 2023-12-15 10:20:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+CRITICAL - 2023-12-15 10:20:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+CRITICAL - 2023-12-15 10:20:35 --> [Caused by] mysqli_sql_exception: Table 'dbrestoran.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Models\Login.php(10): CodeIgniter\Database\BaseConnection->query('SELECT username FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 5 APPPATH\Controllers\LoginController.php(12): App\Models\Login->getDataUsers('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LoginController->login_action()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')
+CRITICAL - 2023-12-15 11:42:18 --> ErrorException: Undefined array key "deskripsi"
+in APPPATH\Views\dbrestoran.php on line 52.
+ 1 APPPATH\Views\dbrestoran.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi"', 'C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\app\\Views\\dbrestoran.php', 52)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\app\\Views\\dbrestoran.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('dbrestoran', [], true)
+ 5 APPPATH\Controllers\MenuController.php(16): view('dbrestoran')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MenuController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Lenovo\\OneDrive\\Documents\\TST\\TubesTST-Sistem-Restoran\\public\\index.php')

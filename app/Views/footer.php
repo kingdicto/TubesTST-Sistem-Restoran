@@ -1,3 +1,3 @@
-        <p>Copyright 2023 STI ITB</p>
-    </body>
-</HTML>
+<footer>
+    <p>&copy; 2023 TST Italiano Resto. All rights reserved. | Savoring Traditions, Creating Memories.</p>
+</footer>
