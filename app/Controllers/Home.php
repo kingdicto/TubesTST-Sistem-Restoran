@@ -9,8 +9,14 @@ class Home extends BaseController
     //     return view('welcome_message');
     // }
 
-    public function index(){
-        echo 'Restoran';     
+    // public function index(){
+    //     echo 'Restoran';     
+    // }
+
+    public function index() : string {
+        return view('header').view('menu').view('dashboard').view('footer');
     }
+
+
 
 }
