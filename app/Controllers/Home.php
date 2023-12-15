@@ -13,7 +13,11 @@ class Home extends BaseController
     //     echo 'Restoran';     
     // }
 
-    public function index() : string {
+    public function index(){
+
+        if (session()->get('num_user') == '') {
+            return redirect()->to('/login');
+        }
         return view('header').view('menu').view('dashboard').view('footer');
     }
 
