@@ -49,10 +49,14 @@
     <nav>
         <a href="/home">Home</a>
         <a href="/dbrestoran">List Menu</a>
-        <a href="/core">Sales</a>
+        <!-- <a href="/core">Sales</a>
+        <a href="/dbrestoranAPI" target='blank'>API Database</a>
+        <a href="/orderAPI" target='blank'>API Order</a> -->
+        <a href="/insightAPI" target='blank'>Sales Insight</a>
+
+
+
     </nav>
-
-
 </body>
 
 </html>

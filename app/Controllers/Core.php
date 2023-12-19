@@ -1,8 +1,12 @@
 <?php
 namespace App\Controllers;
-class Core extends BaseController{
-    public function index(): string
-    {
-        return view('header').view('menu').view('core').view('footer');
+use CodeIgniter\RESTful\ResourceController;
+use App\Models\OrderAPImodel;
+class Core extends ResourceController
+{
+    public function index(){
+        $model = model(OrderAPImodel::class);
+        $data = ['message' => 'success', 'dbrestoran'=>$model -> getInsightData()];
+        return $this->respond($data,200);
     }
 }

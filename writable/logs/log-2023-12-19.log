@@ -1,0 +1,412 @@
+CRITICAL - 2023-12-19 04:38:19 --> CodeIgniter\HTTP\Exceptions\HTTPException: 7 : Failed to connect to localhost port 8080 after 2251 ms: Connection refused
+in SYSTEMPATH\HTTP\CURLRequest.php on line 695.
+ 1 SYSTEMPATH\HTTP\CURLRequest.php(695): CodeIgniter\HTTP\Exceptions\HTTPException::forCurlError('7', 'Failed to connect to localhost port 8080 after 2251 ms: Connection refused')
+ 2 SYSTEMPATH\HTTP\CURLRequest.php(387): CodeIgniter\HTTP\CURLRequest->sendRequest([...])
+ 3 SYSTEMPATH\HTTP\CURLRequest.php(145): CodeIgniter\HTTP\CURLRequest->send('get', 'http://localhost:8080/orderAPI')
+ 4 SYSTEMPATH\HTTP\CURLRequest.php(180): CodeIgniter\HTTP\CURLRequest->request('get', 'http://localhost:8080/orderAPI', [])
+ 5 APPPATH\Models\OrderAPImodel.php(16): CodeIgniter\HTTP\CURLRequest->get('http://localhost:8080/orderAPI')
+ 6 APPPATH\Controllers\OrderAPI.php(12): App\Models\OrderAPImodel->getOrderData()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\OrderAPI->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderAPI))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 05:31:26 --> Error: Class "App\Models\InsightAPImodel" not found
+in APPPATH\Controllers\InsightAPI.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 05:33:00 --> Error: Class "App\Models\InsightAPImodel" not found
+in APPPATH\Controllers\InsightAPI.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 05:33:01 --> Error: Class "App\Models\InsightAPImodel" not found
+in APPPATH\Controllers\InsightAPI.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:15:07 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:17:35 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:19:26 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:19:28 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:19:54 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:19:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:19:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:26:19 --> ErrorException: Undefined array key ""
+in APPPATH\Models\InsightAPImodel.php on line 17.
+ 1 APPPATH\Models\InsightAPImodel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Models\\InsightAPImodel.php', 17)
+ 2 APPPATH\Controllers\InsightAPI.php(12): App\Models\InsightAPImodel->getInsightData()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:26:44 --> ErrorException: Undefined array key ""
+in APPPATH\Models\InsightAPImodel.php on line 17.
+ 1 APPPATH\Models\InsightAPImodel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Models\\InsightAPImodel.php', 17)
+ 2 APPPATH\Controllers\InsightAPI.php(12): App\Models\InsightAPImodel->getInsightData()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:31:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "insight_view.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('insight_view.php')
+ 2 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('insight_view', [], true)
+ 3 APPPATH\Controllers\InsightAPI.php(14): view('insight_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:31:37 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:36:57 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:45:05 --> ErrorException: Undefined variable $selectedMonth
+in APPPATH\Views\core.php on line 15.
+ 1 APPPATH\Views\core.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Views\\core.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Views\\core.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('core', [], true)
+ 5 APPPATH\Controllers\InsightAPI.php(16): view('core')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:52:23 --> ErrorException: Undefined variable $selectedMonth
+in APPPATH\Views\core.php on line 15.
+ 1 APPPATH\Views\core.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Views\\core.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Views\\core.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('core', [], true)
+ 5 APPPATH\Controllers\InsightAPI.php(16): view('core')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:52:24 --> ErrorException: Undefined variable $selectedMonth
+in APPPATH\Views\core.php on line 15.
+ 1 APPPATH\Views\core.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedMonth', 'C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Views\\core.php', 15)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Views\\core.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('core', [], true)
+ 5 APPPATH\Controllers\InsightAPI.php(16): view('core')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 06:55:26 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 07:01:50 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 07:04:51 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 07:04:55 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 07:18:28 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 07:41:26 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 11:05:29 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Core.php(9): CodeIgniter\Model->__call('getInsightData', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Core->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Core))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 11:20:27 --> ParseError: syntax error, unexpected end of file
+in APPPATH\Config\Routes.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 11:24:01 --> ErrorException: Undefined variable $model
+in APPPATH\Controllers\InsightAPI.php on line 19.
+ 1 APPPATH\Controllers\InsightAPI.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $model', 'C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\app\\Controllers\\InsightAPI.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('10', 'dummy1@gmail.com', 'password')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 11:25:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InsightAPI.php(19): CodeIgniter\Model->__call('getDataAuthentication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('10', 'dummy1@gmail.com', 'password')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 11:27:55 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InsightAPI.php(19): CodeIgniter\Model->__call('getDataAuthentication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('10', 'dummy1@gmail.com', 'password')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+INFO - 2023-12-19 11:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 11:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 11:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 11:35:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 11:35:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 11:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 11:48:15 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InsightAPI.php(19): CodeIgniter\Model->__call('getDataAuthentication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('10', 'dummy1@gmail.com', 'password')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 11:50:38 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InsightAPI.php(19): CodeIgniter\Model->__call('getDataAuthentication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('10', 'dummy1@gmail.com', 'password')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 12:13:22 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InsightAPI.php(19): CodeIgniter\Model->__call('getDataAuthentication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('dummy1@gmail.com', 'password')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 12:15:21 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InsightAPI.php(20): CodeIgniter\Model->__call('getDataAuthentication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('dummy1@gmail.com', 'password')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 12:15:23 --> CodeIgniter\Database\Exceptions\DatabaseException: You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(660): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(862): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\InsightAPI.php(20): CodeIgniter\Model->__call('getDataAuthentication', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('dummy1@gmail.com', 'password')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+ERROR - 2023-12-19 12:18:26 --> mysqli_sql_exception: Unknown column 'name' in 'field list' in C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT name FRO...', 0)
+#1 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name FRO...')
+#2 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FRO...')
+#3 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\app\Models\SalesAuth.php(8): CodeIgniter\Database\BaseConnection->query('SELECT name FRO...')
+#4 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\app\Controllers\InsightAPI.php(21): App\Models\SalesAuth->getDataAuthentication('dummy1@gmail.co...', '5f4dcc3b5aa765d...')
+#5 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\CodeIgniter.php(942): App\Controllers\InsightAPI->index('dummy1@gmail.co...', 'password')
+#6 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+#7 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\Hugo\Documents\GitHub\New Sistem Restoran\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\D...')
+#10 {main}
+CRITICAL - 2023-12-19 12:18:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\SalesAuth.php(8): CodeIgniter\Database\BaseConnection->query('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 APPPATH\Controllers\InsightAPI.php(21): App\Models\SalesAuth->getDataAuthentication('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('dummy1@gmail.com', 'password')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 12:18:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 APPPATH\Models\SalesAuth.php(8): CodeIgniter\Database\BaseConnection->query('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Controllers\InsightAPI.php(21): App\Models\SalesAuth->getDataAuthentication('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('dummy1@gmail.com', 'password')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+CRITICAL - 2023-12-19 12:18:26 --> [Caused by] mysqli_sql_exception: Unknown column 'name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 4 APPPATH\Models\SalesAuth.php(8): CodeIgniter\Database\BaseConnection->query('SELECT name FROM users WHERE email = "dummy1@gmail.com" AND password = "5f4dcc3b5aa765d61d8327deb882cf99"')
+ 5 APPPATH\Controllers\InsightAPI.php(21): App\Models\SalesAuth->getDataAuthentication('dummy1@gmail.com', '5f4dcc3b5aa765d61d8327deb882cf99')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\InsightAPI->index('dummy1@gmail.com', 'password')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\InsightAPI))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+INFO - 2023-12-19 12:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 12:28:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "menu.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('menu.php')
+ 2 SYSTEMPATH\Common.php(1172): CodeIgniter\View\View->render('menu', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('menu')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+INFO - 2023-12-19 12:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-19 12:38:13 --> CodeIgniter\Filters\Exceptions\FilterException: "noCSRF" filter must have a matching alias defined.
+in SYSTEMPATH\Filters\Filters.php on line 352.
+ 1 SYSTEMPATH\Filters\Filters.php(352): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('noCSRF')
+ 2 SYSTEMPATH\CodeIgniter.php(467): CodeIgniter\Filters\Filters->enableFilter('noCSRF', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\Hugo\\Documents\\GitHub\\New Sistem Restoran\\public\\index.php')
+INFO - 2023-12-19 12:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 12:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 13:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 13:06:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-19 13:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

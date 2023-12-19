@@ -9,10 +9,9 @@
 <body>
     <h1>Insight Data</h1>
 
-    <!-- Tambahkan dropdown untuk memilih bulan -->
+    <!-- Dropdown untuk memilih bulan -->
     <label for="bulan">Pilih Bulan:</label>
     <select id="bulan" name="bulan">
-        <option value="" <?php echo (!isset($selectedMonth) || $selectedMonth == '') ? 'selected' : ''; ?>>Pilih Bulan</option>
         <option value="10" <?php echo (isset($selectedMonth) && $selectedMonth == 10) ? 'selected' : ''; ?>>Oktober</option>
         <option value="11" <?php echo (isset($selectedMonth) && $selectedMonth == 11) ? 'selected' : ''; ?>>November</option>
         <option value="12" <?php echo (isset($selectedMonth) && $selectedMonth == 12) ? 'selected' : ''; ?>>Desember</option>
@@ -31,7 +30,7 @@
         </thead>
         <tbody>
             <?php foreach ($dbpesanantar as $data): ?>
-                <?php if (!isset($selectedMonth) || $data['Bulan'] == $selectedMonth): ?>
+                <?php if ($data['Bulan'] == (isset($selectedMonth) ? $selectedMonth : 11)): ?>
                     <tr>
                         <td><?php echo $data['Menu']; ?></td>
                         <td><?php echo $data['Harga']; ?></td>
@@ -45,8 +44,8 @@
         </tbody>
     </table>
 
+    <!-- Script untuk menangani perubahan pada dropdown -->
     <script>
-        // Tangani perubahan pada dropdown untuk memuat data sesuai bulan yang dipilih
         document.getElementById('bulan').addEventListener('change', function () {
             var selectedMonth = document.getElementById('bulan').value;
             window.location.href = 'insightAPI/' + selectedMonth;
@@ -54,3 +53,5 @@
     </script>
 </body>
 </html>
+
+
